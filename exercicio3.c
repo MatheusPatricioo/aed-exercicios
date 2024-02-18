@@ -23,3 +23,5 @@ int main()
 // sempre que usar "&", estou chamando o endereço daquela variavel.
 // quando uso *ptr, to apontando para o conteudo da variavel que ptr aponta, neste caso é a variavel var
 // *ptr = O APONTADO POR...
+// o ponteiro nada mais é do que uma variavel que guarda o endereço de memoria de outra variavel.
+
