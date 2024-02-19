@@ -4,11 +4,11 @@ int soma(int x, int y)
 {
     int z = x + y;
 
-    puts("===== > A FUNÇÃO ")
+    puts("\n ===== > A FUNCAO \n");
 
-        printf("&x, = %p, x = %d\n", &x, x);
-        printf("&y, = %p, y = %d\n", &y, y);
-        printf("&z, = %p, z = %d\n", &z, z);
+    printf(" &x = %p, x = %d\n", (void *)&x, x);
+    printf(" &y = %p, y = %d\n", (void *)&y, y);
+    printf(" &z = %p, z = %d\n", (void *)&z, z);
 
     return z;
 }
@@ -19,19 +19,19 @@ int main()
     int b = 20;
     int c;
 
-    puts("### ANTES DA FUNÇÃO ###")
+    puts("\n ### ANTES DA FUNCAO ###\n");
 
-        printf("&a, = %p, a = %d\n", &a, a);
-        printf("&b, = %p, b = %d\n", &b, b);
-        printf("&c, = %p, c = %d\n", &c, c);
+    printf(" &a = %p, a = %d\n", (void *)&a, a);
+    printf(" &b = %p, b = %d\n", (void *)&b, b);
+    printf(" &c = %p, c = %d\n", (void *)&c, c);
 
     c = soma(a, b);
 
-    puts("### DEPOIS DA FUNÇÃO ###")
+    puts("\n ### DEPOIS DA FUNCAO ###\n");
 
-        printf("&a, = %p, a = %d\n", &a, a);
-        printf("&b, = %p, b = %d\n", &b, b);
-        printf("&c, = %p, c = %d\n", &c, c);
+    printf(" &a = %p, a = %d\n", (void *)&a, a);
+    printf(" &b = %p, b = %d\n", (void *)&b, b);
+    printf(" &c = %p, c = %d\n", (void *)&c, c);
 
     return 0;
 }
